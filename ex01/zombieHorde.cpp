@@ -1,14 +1,11 @@
 #include "Zombie.hpp"
 
-Zombie* Zombie::zombieHorde(int N, std::string name)
+Zombie* zombieHorde(int N, std::string name)
 {
-    Zombie *zmb_h;
+    Zombie* zmb_h = new Zombie[N]; // Allocate array of Zombies
     for(int i = 0; i < N; i++)
     {
-        zmb_h = new Zombie;
-        //std::cout << i; debug for count
-        zmb_h->newZombie(name);
-        zmb_h->announce();
+        zmb_h[i].newZombie(name); // Assign name to each zombie
     }
     return zmb_h;
 }
