@@ -2,10 +2,10 @@
 
 Zombie* zombieHorde(int N, std::string name)
 {
-    Zombie* zmb_h = new Zombie[N]; // Allocate array of Zombies
+    Zombie* zmb_h = new Zombie[N];
     for(int i = 0; i < N; i++)
     {
-        zmb_h[i].newZombie(name); // Assign name to each zombie
+        zmb_h[i].newZombie(name);
     }
     return zmb_h;
 }
