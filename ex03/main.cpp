@@ -1,3 +1,5 @@
+#include "Weapon.hpp"
+
 //code given in subject for testing:
 int main()
 {
