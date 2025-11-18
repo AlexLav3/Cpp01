@@ -1,4 +1,6 @@
 #include "Weapon.hpp"
+#include "HumanB.hpp"
+#include "HumanA.hpp"
 
 //code given in subject for testing:
 int main()
