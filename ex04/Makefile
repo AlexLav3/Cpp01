@@ -1,6 +1,6 @@
 NAME = replace
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror
+CXXFLAGS = 
 
 SOURCES = main.cpp 
 		
