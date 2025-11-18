@@ -1,8 +1,8 @@
-NAME = 
+NAME = replace
 CXX = c++
-CXXFLAGS =  -Wall -Wextra -Werror
+CXXFLAGS = -Wall -Wextra -Werror
 
-SOURCES = 
+SOURCES = main.cpp 
 		
 OBJECTS = $(SOURCES:.cpp=.o)
 
