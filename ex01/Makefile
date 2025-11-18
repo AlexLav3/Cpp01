@@ -1,6 +1,6 @@
 NAME = Zombiees
-CC = c++
-CFLAGS =  -Wall -Wextra -Werror
+CXX = c++
+CXXFLAGS =  -Wall -Wextra -Werror
 
 SOURCES = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp zombieHorde.cpp
 		
@@ -9,10 +9,10 @@ OBJECTS = $(SOURCES:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJECTS) 
+	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJECTS) 
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS)

@@ -1,8 +1,8 @@
-NAME = Zombiees
+NAME = 
 CXX = c++
 CXXFLAGS =  -Wall -Wextra -Werror
 
-SOURCES = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SOURCES = 
 		
 OBJECTS = $(SOURCES:.cpp=.o)
 
