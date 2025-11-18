@@ -6,8 +6,10 @@
 bool find_any(std::string filename, std::string s1)
 {
     std::ifstream file(filename);
-    if (!file)
+    if (!file){
+        std::cout << "File couldn't be opened" << std::endl;
         return false;
+    }
     std::string line;
     while (std::getline(file, line)) {
         if (line.find(s1) != std::string::npos)
@@ -27,7 +29,7 @@ void find_replace(std::string filename, std::string s1, std::string s2)
         return;
     }
     std::ofstream newfile(filename + "replace");
-    int i = 0;
+    int i;
     while (std::getline(opFile, read)) {
         i = 0;
         std::string line;
@@ -48,8 +50,10 @@ void find_replace(std::string filename, std::string s1, std::string s2)
 
 int main(int argc, char **argv)
 {
-    if(argc < 4)
+    if(argc < 4){
+        std::cout << "usage: <filename.ext> <s1> <s2>" << std::endl;
         return 0;
+    }
     std::string file = argv[1];
     std::string s1 = argv[2];
     if(s1.empty())
