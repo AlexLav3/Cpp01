@@ -1,8 +1,8 @@
-NAME = replace
+NAME = Harl
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra
 
-SOURCES = main.cpp 
+SOURCES = main.cpp harl.cpp
 		
 OBJECTS = $(SOURCES:.cpp=.o)
 
