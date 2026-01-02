@@ -3,9 +3,8 @@
 ### General Requirements: 
     -Wall -Werror -Wextra and -std=c++98 flags 
     -C++11 (and derived forms) and Boost libraries are forbidden.
-    -using namespace and friend is not allowed
-    -Orthodox Canonical Form
-
+    -using namespace and friend is not allowe
+    
 ## Ex00:
 Making a Zombie Class, with a private attribute name. Zombies can announce themselves with a member function. Two other functions required; 
 
